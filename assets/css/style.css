@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+:root{
+    --primary-color:#bb85ee;
+    --primary-color-dark: #7610d4;
+    --second-color: #4eeeab;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.imagem {
+    display: flex;
+    justify-content: space-around;
+}
+
+img {
+    height: 200px;
+    width: auto;
+}
+
+.subtitulo {
+    line-height: 1;
+    display: flex;
+    gap: 175px;
+}
+
+.titulo {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 15px;
+    margin-top: 30px;
+    align-self: center;
+}
+
+.lista, .subtitulo-IMC {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-peso, .formulario-altura, .formulario-botao {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+    margin: 10px;
+    width: 580px;
+}
+
+input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+.formulario-botao {
+    font-family: 'Pixelify Sans', sans-serif;
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 35px;
+}
+
+.formulario-botao:hover {
+    background: var(--primary-color-dark);
+}
+
+.paragrafo-resultado {
+    background: var(--second-color);
+    padding: 10px 20px;
+}
+
+.bad {
+    background: rgb(244, 64, 64);
+    padding: 10px 20px;
+}
